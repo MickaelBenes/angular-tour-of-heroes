@@ -9,10 +9,10 @@ import { Hero }	from './hero';
 @Injectable()
 export class HeroSearchService {
 	
-	constructor( priavte http: Http ) {}
+	constructor( private http: Http ) {}
 
 	search( term: string ): Observable<Hero[]> {
-		return this.http.get( 'app/heroes/?name=$[term}' )
+		return this.http.get( `app/heroes/?name=${term}` )
 						.map( response => response.json().data as Hero[] );
 	}
 
