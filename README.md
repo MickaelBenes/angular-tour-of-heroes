@@ -1,2 +1,2 @@
 # angular
-Simple Angular tests projects.
+Just completing the Angular tutorial "Tour of Heroes".
