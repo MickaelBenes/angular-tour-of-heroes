@@ -17,8 +17,10 @@ import { Hero } from './hero';
 })
 	
 export class HeroDetailComponent {
+	
 	name = 'Angular';
 	
 	@Input()
 	hero : Hero;
+	
 }
